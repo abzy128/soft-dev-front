@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta />
+  <title>SoftDev</title>
+  <link rel="shortcut icon" href="../../images/icon-dark.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="../../css/custom.css">
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg rounded border-bottom border-light" aria-label="Navigation Bar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex" id="navbar">
+          <a class="navbar-brand col-lg-3 me-0" href="../../"><img id="logo" src="../../images/icon-light.svg"
+              alt="SoftDev" width="40" height="32" class="me-2" /></a>
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item">
+              <a href="../../" class="nav-link px-2 link-body-emphasis"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="../../ide/" class="nav-link px-2 link-body-emphasis dropdown-toggle"><i
+                  class="fa-solid fa-gear"></i>IDEs</a>
+              <ul class="dropdown-menu text-small">
+                <li>
+                  <a class="dropdown-item text-body-emphasis" href="../../ide/visualstudio/"><i class="fa-solid fa-infinity"></i> Visual
+                    Studio</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-body-emphasis" href="../../ide/intellij/"><i class="fa-brands fa-java"></i> IntelliJ</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-body-emphasis" href="../../ide/xcode/"><i class="fa-solid fa-screwdriver-wrench"></i>
+                    Xcode</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-body-emphasis" href="../../ide/eclipse/"><i class="fa-solid fa-circle"></i> Eclipse</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="../../editors/" class="nav-link px-2 dropdown-toggle link-secondary">
+                  <i class="fa-solid fa-globe"></i>
+                  Editors
+                </a>
+                <ul class="dropdown-menu text-small">
+                  <li>
+                    <a class="dropdown-item text-body-emphasis" href="../../editors/vscode/"><i class="fa-solid fa-code"></i> Visual Studio
+                      Code</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-body-emphasis" href="../../editors/vim/"><i class="fa-solid fa-terminal"></i> Vim</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item link-secondary" href="../../editors/notepad++/"><i
+                        class="fa-regular fa-clipboard"></i>
+                      Notepad++</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="../../git/" class="nav-link px-2 link-body-emphasis dropdown-toggle"><i
+                  class="fa-solid fa-code-branch"></i>Git</a>
+              <ul class="dropdown-menu text-small">
+                <li>
+                  <a class="dropdown-item text-body-emphasis" href="../../git/gitcli/"><i class="fa-brands fa-git"></i> Git CLI</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-body-emphasis" href="../../git/github/"><i class="fa-brands fa-github"></i> GitHub</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-body-emphasis" href="../../git/gitlab/"><i class="fa-brands fa-gitlab"></i> GitLab</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" id="search-form" autocomplete="off">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search" list="list-items"
+                id="search-input" />
+              <datalist id="list-items">
+                <option value="../../">Home</option>
+                <option value="../../ide/">IDEs</option>
+                <option value="../../ide/visualstudio/">Visual Studio</option>
+                <option value="../../ide/intellij/">IntelliJ</option>
+                <option value="../../ide/xcode/">Xcode</option>
+                <option value="../../ide/eclipse/">Eclipse</option>
+                <option value="../../editors/">Editors</option>
+                <option value="../../editors/vscode/">Visual Studio Code</option>
+                <option value="../../editors/vim/">Vim</option>
+                <option value="../../editors/notepad++/">Notepad ++</option>
+                <option value="../../git/">Git CLI</option>
+                <option value="../../git/gitcli/">Git</option>
+                <option value="../../git/github/">GitHub</option>
+                <option value="../../git/gitlab/">GitLab</option>
+              </datalist>
+            </form>
+
+            <div class="dropdown text-end">
+              <a href="" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://avatars.githubusercontent.com/u/19868776" alt="mdo" width="32" height="32"
+                  class="rounded-circle" />
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="" data-bs-toggle="modal" data-bs-target="#loginModal">Profile</a>
+                </li>
+                <li><a class="dropdown-item" href="">My messages</a></li>
+                <li><a class="dropdown-item" href="">Settings</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="">Sign out</a></li>
+              </ul>
+            </div>
+            <div class="justify-content-lg-end">
+              <a class="nav-link px-2 link-body-emphasis">
+                <i class="fa-solid fa-xl fa-sun" id="theme-switch-button"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container my-5">
+  </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="../../images/hero/npp.webp" class="d-block mx-lg-auto img-fluid" alt="Hero" width="700" height="500"
+          loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Notepad++</h1>
+        <p class="lead">
+          Notepad++ is known for being lightweight, fast, and customizable. It provides a range of plugins and themes,
+          allowing users to extend its functionality and personalize their editing environment. Its user-friendly
+          interface, combined with powerful coding features, makes it a popular choice for developers working on various
+          programming projects.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="https://notepad-plus-plus.org/downloads/" target="_blank">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Download</button>
+          </a>
+          <a href="https://npp-user-manual.org/" target="_blank">
+            <button type="button" class="btn btn-outline-accent1 btn-lg px-4 me-md-2">Learn more</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Features</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <i class="fa-solid fa-highlighter-line fa-2xl"></i>
+        </div>
+        <h3 class="fs-2 text-body-emphasis mt-3">Syntax Highlighting</h3>
+        <p>Notepad++ provides syntax highlighting for a wide variety of programming languages, making code visually more
+          accessible and aiding in error detection. This feature enhances code readability and helps developers quickly
+          identify different elements in their code, such as keywords, comments, and variables.</p>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
+          <i class="fa-solid fa-eye fa-2xl"></i>
+        </div>
+        <h3 class="fs-2 text-body-emphasis mt-3">Multi-View</h3>
+        <p>Notepad++ supports a multi-view and multi-document interface, allowing users to work with multiple files
+          simultaneously. Developers can easily switch between open files and arrange them in different views, making it
+          convenient for tasks such as comparing and editing code across different files.</p>
+
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+        </div>
+        <h3 class="fs-2 text-body-emphasis mt-3">Powerful Search and Replace</h3>
+        <p> Notepad++ offers advanced search and replace functionality, including support for regular expressions. This
+          feature is valuable for developers who need to quickly find specific pieces of code, make global changes, or
+          perform complex search operations within their project.</p>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <footer class="py-5 rounded border-top border-light">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Sections</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="../../" class="nav-link px-2 link-body-emphasis">
+                  <i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <div class="dropdown">
+                  <a href="../../ide/" class="nav-link px-2 link-body-emphasis dropdown-toggle"><i
+                      class="fa-solid fa-gear"></i>IDEs</a>
+                  <ul class="dropdown-menu text-small">
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../ide/visualstudio/"><i class="fa-solid fa-infinity"></i>
+                        Visual
+                        Studio</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../ide/intellij/"><i class="fa-brands fa-java"></i> IntelliJ</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../ide/xcode/"><i class="fa-solid fa-screwdriver-wrench"></i>
+                        Xcode</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../ide/eclipse/"><i class="fa-solid fa-circle"></i> Eclipse</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item mb-2">
+                <div class="dropdown">
+                  <a href="../../editors/" class="nav-link px-2 link-body-emphasis dropdown-toggle">
+                    <i class="fa-solid fa-globe"></i>
+                    Editors
+                  </a>
+                  <ul class="dropdown-menu text-small">
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../editors/vscode/"><i class="fa-solid fa-code"></i> Visual
+                        Studio Code</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../editors/vim/"><i class="fa-solid fa-terminal"></i> Vim</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../editors/notepad++/"><i class="fa-regular fa-clipboard"></i>
+                        Notepad++</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item mb-2">
+                <div class="dropdown">
+                  <a href="../../git/" class="nav-link px-2 link-body-emphasis dropdown-toggle"><i
+                      class="fa-solid fa-code-branch"></i>Git</a>
+                  <ul class="dropdown-menu text-small">
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../git/gitcli/"><i class="fa-brands fa-git"></i> Git CLI</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../git/github/"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-body-emphasis" href="../../git/gitlab/"><i class="fa-brands fa-gitlab"></i> GitLab</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 mb-3">
+            <h5>Contacts</h5>
+            <p>Phone: <a class="text-decoration-none" href="tel:+7 777 777 7777">+7 777 777 7777</a></p>
+            <p>Phone: <a class="text-decoration-none" href="tel:+7 777 777 7777">+7 777 777 7777</a></p>
+            <p>Email: <a class="text-decoration-none"
+                href="mailto:abzalorazbek@abzy.kz">abzalorazbek@abzy.kz</a></p>
+            <p>Address: <a class="text-decoration-none" href="">Astana, Kazakhstan</a></p>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 Abzal Orazbek. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis text-decoration-none" href="https://t.me/abzal_orazbek"
+                  target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
+              <li class="ms-3"><a class="link-body-emphasis text-decoration-none" href="https://github.com/abzy128"
+                  target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></a></li>
+              <li class="ms-3"><a class="link-body-emphasis text-decoration-none"
+                  href="https://www.instagram.com/abzal__orazbek/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i>
+                  Instagram</a></a></li>
+              <li class="ms-3"><a class="link-body-emphasis text-decoration-none"
+                  href="https://www.linkedin.com/in/abzal-orazbek/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i>
+                  LinkedIn</a></a></li>
+            </ul>
+          </div>
+      </footer>
+
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginmodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Sorry</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Unfortunately, account system is not yet implemented.</p>
+              <p>I am working really hard on it)</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="../../js/font-awesome.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script type="module" src="../../js/main.js"></script>
+</body>
+
+</html>
