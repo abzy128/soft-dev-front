@@ -5,6 +5,7 @@
   "private": false,
   "repository": "abzy128/soft-dev-front",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "npm run css",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:css/",
