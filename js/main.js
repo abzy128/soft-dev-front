@@ -1,5 +1,3 @@
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-
 $("#theme-switch-button").on("click", function (e) {
   e.preventDefault();
   if ($("html").attr("data-bs-theme") == "dark") {
