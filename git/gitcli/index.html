@@ -81,7 +81,7 @@
                   class="fa-solid fa-code-branch"></i>Git</a>
               <ul class="dropdown-menu text-small">
                 <li>
-                  <a class="dropdown-item text-body-emphasis" href="../../git/gitcli/"><i class="fa-brands fa-git"></i>
+                  <a class="dropdown-item text-secondary" href="../../git/gitcli/"><i class="fa-brands fa-git"></i>
                     Git CLI</a>
                 </li>
                 <li>
@@ -89,8 +89,8 @@
                       class="fa-brands fa-github"></i> GitHub</a>
                 </li>
                 <li>
-                  <a class="dropdown-item text-secondary" href="../../git/gitlab/"><i class="fa-brands fa-gitlab"></i>
-                    GitLab</a>
+                  <a class="dropdown-item text-body-emphasis" href="../../git/gitlab/"><i
+                      class="fa-brands fa-gitlab"></i> GitLab</a>
                 </li>
               </ul>
             </li>
@@ -150,16 +150,23 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="../../images/hero/gitlab.webp" class="d-block mx-lg-auto img-fluid" alt="Hero" width="700" height="500"
+        <img src="../../images/hero/gitcli.png" class="d-block mx-lg-auto img-fluid" alt="Hero" width="700" height="500"
           loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">GitLab</h1>
-        <p class="lead">GitLab is a web-based platform that provides a complete set of tools for software development,
-          including version control, continuous integration, code review, and more. It is often used as a collaborative
-          platform for teams to manage their software development lifecycle.</p>
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Git CLI</h1>
+        <p class="lead">Git is a free and open source distributed version control system designed to handle everything
+          from small to very large projects with speed and efficiency.</p>
+        <p class="lead">
+          Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like
+          Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas,
+          and multiple workflows.
+        </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a href="https://about.gitlab.com/" target="_blank">
+          <a href="https://git-scm.com/downloads" target="_blank">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Download</button>
+          </a>
+          <a href="https://git-scm.com/about" target="_blank">
             <button type="button" class="btn btn-outline-accent1 btn-lg px-4 me-md-2">Learn more</button>
           </a>
         </div>
@@ -171,30 +178,36 @@
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-          <i class="fa-brands fa-git-alt fa-2xl"></i>
+          <i class="fa-solid fa-code-commit fa-2xl"></i>
         </div>
-        <h3 class="fs-2 text-body-emphasis mt-3">Integrated Version Control</h3>
-        <p>GitLab offers a robust version control system based on Git, allowing developers to track changes, collaborate
-          on code, and manage different versions of their projects efficiently.</p>
+        <h3 class="fs-2 text-body-emphasis mt-3">Distributed Version Control</h3>
+        <p>Git is a distributed version control system, which means that each user has a complete copy of the entire
+          repository, including the entire history of changes. This allows users to work independently, make changes to
+          their local copies, and later synchronize those changes with others. It provides a robust and flexible way to
+          collaborate on projects, even when contributors are geographically dispersed.</p>
       </div>
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
           <i class="fa-solid fa-code-branch fa-2xl"></i>
         </div>
-        <h3 class="fs-2 text-body-emphasis mt-3">Continuous Integration/Continuous Deployment (CI/CD)</h3>
-        <p>GitLab provides built-in CI/CD pipelines, enabling automated testing and deployment of code changes. This
-          helps teams catch and fix issues early in the development process, ensuring more reliable and efficient
-          software delivery.</p>
+        <h3 class="fs-2 text-body-emphasis mt-3">Branching and Merging</h3>
+        <p>One of Git's powerful features is its ability to handle branching and merging seamlessly. Branching allows
+          developers to create isolated environments to work on specific features or fixes without affecting the main
+          codebase. After making changes in a branch, developers can merge their changes back into the main branch,
+          integrating their work with the rest of the project. This facilitates parallel development and experimentation
+          without disrupting the stability of the main code.</p>
 
       </div>
       <div class="feature col">
         <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-          <i class="fa-solid fa-user-magnifying-glass fa-2xl"></i>
+          <i class="fa-solid fa-clock fa-2xl"></i>
         </div>
-        <h3 class="fs-2 text-body-emphasis mt-3">Code Review</h3>
-        <p>GitLab includes tools for code review, facilitating collaboration among team members. Developers can comment
-          on code changes, suggest improvements, and ensure code quality before it is merged into the main branch. This
-          contributes to better code maintainability and overall project quality.</p>
+        <h3 class="fs-2 text-body-emphasis mt-3">Commit History and Time Travel</h3>
+        <p>Git maintains a detailed history of all changes made to a project. Each change is recorded as a commit, which
+          includes information about what was changed, who made the change, and when it occurred. Developers can
+          navigate through the commit history to understand how the project has evolved over time. Git also allows "time
+          travel" by reverting to previous commits, enabling users to roll back to a specific point in time in case a
+          mistake is made or to analyze the project's state at different stages.</p>
 
       </div>
     </div>
@@ -268,7 +281,8 @@
                   <ul class="dropdown-menu text-small">
                     <li>
                       <a class="dropdown-item text-body-emphasis" href="../../git/gitcli/"><i
-                          class="fa-brands fa-git"></i> Git CLI</a>
+                          class="fa-brands fa-git"></i>
+                        Git CLI</a>
                     </li>
                     <li>
                       <a class="dropdown-item text-body-emphasis" href="../../git/github/"><i
